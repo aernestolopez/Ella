@@ -38,7 +38,7 @@ public class Querys : MonoBehaviour
             string death = muertes.GetComponent<TextMeshProUGUI>().text;
             m_Scene = SceneManager.GetActiveScene();
             sceneName = m_Scene.name;
-             db.Query("UPDATE user SET points = '"+fruits+"', deaths = '"+death+"', level = '"+sceneName+"' WHERE  id = 1;");
+             db.Query("UPDATE usuario SET points = '"+fruits+"', deaths = '"+death+"', level = '"+sceneName+"' WHERE  id = 1;");
         }
     }
 
